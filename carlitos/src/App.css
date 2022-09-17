@@ -1,0 +1,21 @@
+
+.banner{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: xx-large;
+}
+
+.footer{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-large;
+}
+a {
+  color: blue;
+}
