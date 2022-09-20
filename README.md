@@ -1,2 +1,3 @@
 # carlitos_react
-This is the repo for the front end of carlitos-206.xyz
+Site is live 
+[carlitos-206.xyz](https://www.carlitos-206.xyz)
