@@ -1,4 +1,4 @@
-// This will server as list of img for the tech stacks
+// This will serve as list of img for the tech stacks
 import adobe from './tech/adobe.png';
 import ajax from './tech/ajax.png';
 import animateCSS from './tech/animateCSS.png';
