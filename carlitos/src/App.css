@@ -1,21 +1,32 @@
+/* Landing Page */
 
-.banner{
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: xx-large;
-}
-
-.footer{
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-large;
-}
-a {
-  color: blue;
-}
+        /* Opening Carusel */
+            .slideDiv{
+              display: flex;
+              justify-content: center;
+              position: relative;
+              top: 350px;
+              ---animate-delay: 2s;
+            }
+            .openingCarusel{
+              width: min-content;
+            }
+              .imgContainer{
+                width: min-content;
+              }
+              .openingIMG{
+                width: 250px;
+              }
+              /* These are React BootStrap controls from the Carousel Component */
+              .carousel-indicators, .carousel-control-next{
+                display: none;
+              }
+              .carousel-control-prev{
+                display: none;
+              }
+        /* NavBar */
+              .navBar{
+                position: relative;
+                left: 70%;
+                bottom: 200px;
+              }

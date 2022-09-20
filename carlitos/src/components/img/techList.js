@@ -3,6 +3,7 @@ import adobe from './tech/adobe.png';
 import ajax from './tech/ajax.png';
 import animateCSS from './tech/animateCSS.png';
 import balsamiq  from './tech/balsamiq.png';
+import bootStrap from './tech/bootstrap.png'
 import cmd from './tech/commandPrompt.png';
 import css from './tech/CSS.png';
 import django from './tech/django.png';
@@ -31,9 +32,9 @@ import premierRush from './tech/premierRush.png';
 import pureCSS from './tech/pureCSS.png';
 import python from './tech/python.png';
 import react from './tech/react.png';
+import reactBootstrap from './tech/reactBootStrap.png'
 import sqlite from './tech/sqlite.png';
 import tailWind from './tech/tailwindCSS.png';
-import twitter from './tech/twitter.png';
 import ubuntu from './tech/ubuntu.png'
 import uw from './tech/uw.png';
 import vim from './tech/vim.png';
@@ -46,6 +47,7 @@ export const techList = [
   ajax, 
   animateCSS, 
   balsamiq, 
+  bootStrap,
   cmd, 
   css, 
   django, 
@@ -74,9 +76,9 @@ export const techList = [
   pureCSS,
   python,
   react,
+  reactBootstrap,
   sqlite,
   tailWind,
-  twitter,
   ubuntu,
   uw,
   vim,

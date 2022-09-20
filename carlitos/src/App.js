@@ -1,13 +1,37 @@
 import React from 'react';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'animate.css'
 import {  Routes, Route } from 'react-router-dom'
-import HomePage  from './components/index';
+// Components
+import SlideShow from './components/slideShow';
+import NavBar from './components/navbar';
+// ---
+// Functions
+import sleep  from './components/globalFunctions/sleep.js'
+
+// ----
+// CSS
+import './App.css';
 
 function App() {
+  const LandingPage = () =>{
+      return(
+        <main>
+          <div className='slideDiv animate__animated animate__fadeOut animate__delay-1s'>
+            <SlideShow />
+          </div>
+          <div className='animate__animated animate__fadeIn animate__delay-2s'>
+            <nav>
+              <NavBar />
+            </nav>
+          </div>
+        </main>
+      )
+  }
   return (
     <div className="App">
         <Routes>
-            <Route path="/" element = { <HomePage /> } />
+            <Route path="/" element = { <LandingPage /> } />
         </Routes>
     </div>
   );
