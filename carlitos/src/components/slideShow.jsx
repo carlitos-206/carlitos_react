@@ -35,6 +35,14 @@ export default function SlideShow() {
             id='img_3'
             />
         </Carousel.Item>
+        <Carousel.Item interval={50}>
+          <img
+            className="d-block w-10 openingIMG"
+            src={techList[randomIdx[3]]}
+            alt="Third slide"
+            id='img_3'
+            />
+        </Carousel.Item>
       </Carousel>
     </main>
   );

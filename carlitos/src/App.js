@@ -5,6 +5,7 @@ import {  Routes, Route } from 'react-router-dom'
 // Components
 import SlideShow from './components/slideShow';
 import NavBar from './components/navbar';
+import Stars from './components/stars';
 // ---
 // Functions
 import sleep  from './components/globalFunctions/sleep.js'
@@ -24,6 +25,7 @@ function App() {
             <nav>
               <NavBar />
             </nav>
+            {/* <Stars /> */}
           </div>
         </main>
       )
