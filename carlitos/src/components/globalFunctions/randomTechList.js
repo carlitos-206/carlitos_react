@@ -6,6 +6,18 @@ export default function randomTechList(arr){
     if(array.includes(randomIdx)){
       let newRandom = Math.floor(Math.random() * max) + 1
       array.push(newRandom)
+      if(array.includes(randomIdx)){
+        let newRandom = Math.floor(Math.random() * max) + 1
+        array.push(newRandom)
+        if(array.includes(randomIdx)){
+          let newRandom = Math.floor(Math.random() * max) + 1
+          array.push(newRandom)
+        }else{
+          array.push(randomIdx)
+        }
+      }else{
+        array.push(randomIdx)
+      }
     }else{
       array.push(randomIdx)
     }
