@@ -15,7 +15,7 @@ function App() {
           <SlideShow />
         </div>
         <div className='foot'>
-          <h1>Carlos R. Cáceres Martínez | <a href="https://github.com/carlitos-206" target="_blank" rel="noopener noreferrer" >GitHub</a></h1>
+          <h1>Carlos R. Cáceres Martínez <span class='desktop-tablet-only'>|</span> <span><a id='gitProfileLink' href="https://github.com/carlitos-206" target="_blank" rel="noopener noreferrer" >GitHub</a></span></h1>
         </div>
       </main>
     )

@@ -6,12 +6,16 @@
 /* Landing Page  1920 x 929 || 1920 x 1080*/
 
         /* Opening Carusel */
+            h1 {
+              font-size: 1.5rem;
+            }
             .slideDiv, .head, .foot{
               display: flex;
               justify-content: center;
               position: relative;
-              top: 325px;
+              top: 125px;
               font-family: 'Courier New', Courier, monospace;
+              /* font-size: 1rem; */
             }
             .openingCarusel{
               width: min-content;
@@ -34,3 +38,16 @@
               .carousel-control-prev{
                 display: none;
               }
+              /* <768 */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .desktop-tablet-only{
+    display: none;
+  }
+  #gitProfileLink{
+    display: flex;
+    justify-content: center;
+  }
+}
