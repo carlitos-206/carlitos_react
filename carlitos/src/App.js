@@ -9,10 +9,13 @@ import {  Routes, Route } from 'react-router-dom'
 import SlideShow from './components/slideShow';
 import NavBar from './components/navbar';
 import Stars from './components/stars';
+import Sun from './components/sun'
+import PlanetFrontEnd from './components/planet_front_end';
+
 
 // --------
 // Functions
-import sleep  from './components/globalFunctions/sleep.js'
+// import sleep  from './components/globalFunctions/sleep.js'
 
 // ---------
 // CSS
@@ -38,6 +41,8 @@ function App() {
             <nav>
               <NavBar />
             </nav>
+            <Sun />
+            <PlanetFrontEnd />
           </div>
         </main>
       )

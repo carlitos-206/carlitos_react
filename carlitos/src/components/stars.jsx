@@ -5,7 +5,6 @@ import React from "react";
 import starImg from './img/random/blackStar.png'
 
 export default function Stars(){
-  const body = document.querySelector('body');
   let array = []
   function random(min, max) {
     return min + Math.random() * (max + 1 - min);
@@ -15,13 +14,14 @@ export default function Stars(){
     let item = <img src={starImg} alt='*' className='stars' id={`star_${i}`} style={{
       width: `${random(0,15)}px`,
       position: 'relative',
-      top: `${random(0, 3080)}px`
+      top: `${random(0, 3080)}px`,
+      zIndex: '-6'
     }
     } />
     array.push(item)
   }
   return(
-    <div className="starCointainer">
+    <div className="starCointainer" style={{zIndex:'-6'}}>
       {array.map(item => item)}
     </div>
   )
