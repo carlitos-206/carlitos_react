@@ -110,13 +110,39 @@
               }
               
             }
-            .sun{
+            @keyframes orbit-reverse {
+              from {
+                transform: rotate(0deg);
+              }
+              to{
+                transform: rotate(-360deg);
+              }
+              
+            }
+            @keyframes blink {
+              0% {
+                opacity: 1;
+              }
+              50% {
+                opacity: .5;
+              }
+              100% {
+                opacity: 0;
+              }
+            }
+            .carousel-item {
+              transition: opacity 1s ease-in-out !important;
+            }
+            .sun_container{
               display: flex;
               justify-content: center;
-              position: relative;
-              bottom: 180px;
-              background-color: #48ff00;
               z-index: -4;
+              position: relative;
+              bottom: 250px;
+              /* background-color: #000; */
+            }
+            .sunCarusel{
+              width: min-content;
             }
             #bioImg{
               width: 150px;
@@ -124,29 +150,98 @@
             }
             .planet_front_end_container{
               position: absolute;
-              top: 100px;
-              left: 50px;
+              top: 350px;
+              left: 340px;
               animation: orbit 20s;
               animation-iteration-count: infinite;
-              width: 100%;
+              width: 55%;
               z-index: 1;
-              background-color: #ff0000;
             }
             #planet_front_end{
               background-image: linear-gradient(#e66465, #9198e5);
               background-image: -moz-linear-gradient(#e66465, #9198e5);
               background-image: -o-linear-gradient(#e66465, #9198e5);
               background-image: -webkit-linear-gradient(#e66465, #9198e5);
-              height: 150px;
+              height: 200px;
               width: max-content;
-              padding-top:50px ;
+              padding-top:25px ;
               border-radius: 100%;
               padding-left: 10px;
               padding-right: 10px;
               outline: solid 2px black;
               font-family:'Courier New', Courier, monospace;
-              font-family: 15px;
+              animation: orbit-reverse 20s;
+              animation-iteration-count: infinite;
+            }
+            #planet_front_end_text{
+              position: relative;
+              top: 50px;
+            }
+            .planet_back_end_container{
+              position: absolute;
+              top: 350px;
+              left: 225px;
+              animation: orbit-reverse 20s;
+              animation-iteration-count: infinite;
+              width: 75%;
+              z-index: 1;
+              display: flex;
+              justify-content: flex-end;
+              transform: rotate(55deg);
+            }
+            #planet_back_end{
+              background-color: #000;
+              height: 275px;
+              width: max-content;
+              padding-top:25px ;
+              border-radius: 100%;
+              padding-left: 10px;
+              padding-right: 10px;
+              outline: solid 2px black;
+              font-family:'Courier New', Courier, monospace;
+              font-family: 13px;
               animation: orbit 20s;
               animation-iteration-count: infinite;
             }
-           
+            #planet_back_end_text{
+              color: #48ff00;
+              position: relative;
+              top: 40px;
+              position: relative;
+              top: 90px;
+            }
+            #planet_back_end_text_square{
+              animation: blink 1s;
+              animation-iteration-count: infinite ;
+              color: #48ff00;
+              position: relative;
+              right: 5px;
+            }
+            .planet_database_container{
+              position: absolute;
+              top: 350px;
+              right: 95px;
+              animation: orbit 45s;
+              animation-iteration-count: infinite;
+              width: 75%;
+              z-index: 1;
+            }
+            #planet_database{
+              background-color: rgb(6, 59, 101);
+              height: 275px;
+              width: max-content;
+              padding-top:25px ;
+              border-radius: 100%;
+              padding-left: 10px;
+              padding-right: 10px;
+              outline: solid 2px black;
+              font-family:'Courier New', Courier, monospace;
+              font-family: 13px;
+              animation: orbit-reverse 45s;
+              animation-iteration-count: infinite;
+            }
+            #planet_database_text{
+              color: gold;
+              position: relative;
+              top: 80px;
+            }

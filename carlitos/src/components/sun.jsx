@@ -1,12 +1,29 @@
-import React from "react";
-import bio from './img/contact/bio.jpg'
+import Carousel from 'react-bootstrap/Carousel';
+import { techList } from './img/techList.js';
+import shuffle from './globalFunctions/randomTechList.js';
 
+export default function Sun() {
+  let randomIdx = shuffle(techList) 
+  console.log(typeof randomIdx)
+  return (
+    <div className='sun_container'>
+      <div className='sunCarusel carousel-fade'>
 
-export default function Sun(){
-
-  return(
-    <div className="sun">
-      <img src={bio} alt="The Sun" id="bioImg" />
+        <Carousel className='carousel-fade'>
+        {randomIdx.map((item, idx)=>{
+              return(
+                <Carousel.Item interval={50}className="carousel-item imgContainer" key={idx}>
+                <img
+                  className="d-block w-10 openingIMG"
+                  src={item}
+                  alt={`slide_${idx}`}
+                  id={`slide_img_${idx}`}
+                  />
+              </Carousel.Item>
+              )
+          })}
+        </Carousel>
+      </div>
     </div>
-  )
+  );
 }

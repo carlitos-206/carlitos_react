@@ -1,9 +1,9 @@
+import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { techList } from './img/techList.js';
-import randomTechList from './globalFunctions/randomTechList.js';
-
+import shuffle from './globalFunctions/randomTechList.js';
 export default function SlideShow() {
-  let randomIdx = randomTechList(techList) 
+  let randomIdx = shuffle(techList) 
   return (
     <div className='openingCarusel'>
 
@@ -13,7 +13,7 @@ export default function SlideShow() {
               <Carousel.Item interval={50} className="imgContainer" key={idx}>
               <img
                 className="d-block w-10 openingIMG"
-                src={techList[item]}
+                src={item}
                 alt={`slide_${idx}`}
                 id={`slide_img_${idx}`}
                 />

@@ -11,6 +11,8 @@ import NavBar from './components/navbar';
 import Stars from './components/stars';
 import Sun from './components/sun'
 import PlanetFrontEnd from './components/planet_front_end';
+import PlanetBackEnd from './components/planet_back_end';
+import PlanetDataBase from './components/planet_data_base';
 
 
 // --------
@@ -35,7 +37,7 @@ function App() {
           <div className='slideDiv animate__animated animate__fadeOut animate__delay-1s'>
             <SlideShow />
           </div>
-          <div className='animate__animated animate__fadeIn animate__delay-2s'>
+          <div className='animate__animated animate__fadeIn animate__delay-2s universeDIV'>
             <Stars />
             {killSlides()}
             <nav>
@@ -43,6 +45,8 @@ function App() {
             </nav>
             <Sun />
             <PlanetFrontEnd />
+            <PlanetBackEnd />
+            <PlanetDataBase />
           </div>
         </main>
       )
