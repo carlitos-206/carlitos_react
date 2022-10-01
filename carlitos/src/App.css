@@ -38,8 +38,15 @@
                 background-color: rgb(255, 255, 255);
                 z-index: 4;
               }
-              .pure-menu-item{
+              .pure-menu-item, .pure-menu-heading{
                 z-index: 5;
+              }
+              #brandIMG{
+                width: 33px;
+                position: absolute;
+                right: -1px;
+                top: -10px;
+                border-radius: 10%;
               }
               .glow-on-hover {
                 width: max-content;
@@ -130,6 +137,14 @@
                 opacity: 0;
               }
             }
+            @keyframes back {
+              from {
+              background-size: 100% 100%;
+            }
+            to {
+              background-size: 200% 200%;
+            }
+            }
             .carousel-item {
               transition: opacity 1s ease-in-out !important;
             }
@@ -138,7 +153,7 @@
               justify-content: center;
               z-index: -4;
               position: relative;
-              bottom: 250px;
+              bottom: 750px;
               /* background-color: #000; */
             }
             .sunCarusel{
@@ -151,8 +166,8 @@
             .planet_front_end_container{
               position: absolute;
               top: 350px;
-              left: 340px;
-              animation: orbit 20s;
+              left: 390px;
+              animation: orbit 35s;
               animation-iteration-count: infinite;
               width: 55%;
               z-index: 1;
@@ -170,7 +185,7 @@
               padding-right: 10px;
               outline: solid 2px black;
               font-family:'Courier New', Courier, monospace;
-              animation: orbit-reverse 20s;
+              animation: orbit-reverse 35s;
               animation-iteration-count: infinite;
             }
             #planet_front_end_text{
@@ -181,7 +196,7 @@
               position: absolute;
               top: 350px;
               left: 225px;
-              animation: orbit-reverse 20s;
+              animation: orbit 55s;
               animation-iteration-count: infinite;
               width: 75%;
               z-index: 1;
@@ -200,7 +215,7 @@
               outline: solid 2px black;
               font-family:'Courier New', Courier, monospace;
               font-family: 13px;
-              animation: orbit 20s;
+              animation: orbit-reverse 55s;
               animation-iteration-count: infinite;
             }
             #planet_back_end_text{
@@ -221,14 +236,15 @@
               position: absolute;
               top: 350px;
               right: 95px;
-              animation: orbit 45s;
+              animation: orbit 25s;
               animation-iteration-count: infinite;
               width: 75%;
               z-index: 1;
+              transform: rotate(90deg);
             }
             #planet_database{
               background-color: rgb(6, 59, 101);
-              height: 275px;
+              height: 270px;
               width: max-content;
               padding-top:25px ;
               border-radius: 100%;
@@ -237,11 +253,83 @@
               outline: solid 2px black;
               font-family:'Courier New', Courier, monospace;
               font-family: 13px;
-              animation: orbit-reverse 45s;
+              animation: orbit-reverse 25s;
               animation-iteration-count: infinite;
             }
             #planet_database_text{
               color: gold;
               position: relative;
               top: 80px;
+              font-size: 25px;
+
+            }
+            .planet_deployment_container{
+              position: absolute;
+              top: 350px;
+              right: 95px;
+              animation: orbit 35s;
+              animation-iteration-count: infinite;
+              width: 75%;
+              z-index: 1;
+              display: flex;
+              justify-content: flex-end;
+              transform: rotate(55deg);
+            }
+            #planet_deployment{
+              background-color: rgb(90, 170, 0);
+              height: 270px;
+              width: max-content;
+              border-radius: 100%;
+              padding-top: 25px;
+              padding-left: 10px;
+              padding-right: 10px;
+              outline: solid 2px black;
+              font-family:'Courier New', Courier, monospace;
+              font-family: 13px;
+              animation: orbit-reverse 35s;
+              animation-iteration-count: infinite;
+            }
+            #planet_deployment_text{
+              color: gold;
+              position: relative;
+              top: 80px;
+              font-size: 45px;
+
+            }
+            .planet_visual_media_container{
+              position: absolute;
+              top: 300px;
+              right: 395px;
+              animation: orbit-reverse 5s;
+              animation-iteration-count: infinite;
+              width: 60%;
+              z-index: 1;
+              display: flex;
+              justify-content: flex-end;
+              transform: rotate(55deg);
+            }
+            #planet_visual_media{
+              height: 270px;
+              width: max-content;
+              border-radius: 100%;
+              padding-top: 25px;
+              padding-left: 10px;
+              padding-right: 10px;
+              outline: solid 2px black;
+              font-family:'Courier New', Courier, monospace;
+              font-family: 13px;
+              animation: orbit 5s;
+              animation-iteration-count: infinite;
+            }
+            .planet_media{
+              background-image: repeating-radial-gradient(circle at 17% 32%, white, black 0.00085px);
+              animation: back 5s;
+              animation-iteration-count: linear infinite;
+            }
+            #planet_visual_media_text{
+              color: gold;
+              position: relative;
+              top: 80px;
+              font-size: 45px;
+              background-color: #000;
             }

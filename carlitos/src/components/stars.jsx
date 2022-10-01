@@ -10,7 +10,7 @@ export default function Stars(){
     return min + Math.random() * (max + 1 - min);
   }
 
-  for(let i = 0; i < 4500; i++){
+  for(let i = 0; i < 10000; i++){
     let item = <img src={starImg} alt='*' className='stars' id={`star_${i}`} style={{
       width: `${random(0,15)}px`,
       position: 'relative',

@@ -13,7 +13,8 @@ import Sun from './components/sun'
 import PlanetFrontEnd from './components/planet_front_end';
 import PlanetBackEnd from './components/planet_back_end';
 import PlanetDataBase from './components/planet_data_base';
-
+import PlanetDeployment from './components/planet_deployment';
+import PlanetVisualMedia from './components/planet_media';
 
 // --------
 // Functions
@@ -44,9 +45,11 @@ function App() {
               <NavBar />
             </nav>
             <Sun />
-            <PlanetFrontEnd />
             <PlanetBackEnd />
             <PlanetDataBase />
+            <PlanetDeployment />
+            <PlanetVisualMedia />
+            <PlanetFrontEnd />
           </div>
         </main>
       )

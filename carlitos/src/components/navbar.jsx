@@ -1,15 +1,18 @@
 import React from "react";
-
+import me from "./img/contact/bio.jpg"
 export default function NavBar(){
     return(
         <div className="pure-menu pure-menu-horizontal navBar glow-on-hover">
-            {/* <a href="#" class="pure-menu-heading pure-menu-link">BRAND</a> */}
             <ul className="pure-menu-list">
+            {/* <a href="#" class="pure-menu-heading pure-menu-link"><img src={me} alt="brand" id="brandIMG" />s</a> */}
                 <li className="pure-menu-item">
-                    <a href="#" class="pure-menu-link">About Me</a>
+                    <a href="#" class="pure-menu-link"><img src={me} alt="brand" id="brandIMG" /></a>
                 </li>
                 <li className="pure-menu-item">
                     <a href="#" class="pure-menu-link">Projects</a>
+                </li>
+                <li className="pure-menu-item">
+                    <a href="#" class="pure-menu-link">About Me</a>
                 </li>
                 <li className="pure-menu-item">
                     <a href="#" class="pure-menu-link">Resume</a>
@@ -17,9 +20,9 @@ export default function NavBar(){
                 <li className="pure-menu-item">
                     <a href="#" class="pure-menu-link">Contact</a>
                 </li>
-                {/* <li className="pure-menu-item">
+                <li className="pure-menu-item">
                     <a href="#" class="pure-menu-link">Sign-in/Register</a>
-                </li> */}
+                </li>
             </ul>
         </div>
     )
