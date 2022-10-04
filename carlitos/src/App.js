@@ -16,6 +16,9 @@ import PlanetDataBase from './components/planet_data_base';
 import PlanetDeployment from './components/planet_deployment';
 import PlanetVisualMedia from './components/planet_media';
 
+import AboutMe from './components/aboutMe';
+import Projects from './components/projects';
+
 // --------
 // Functions
 // import sleep  from './components/globalFunctions/sleep.js'
@@ -44,12 +47,16 @@ function App() {
             <nav>
               <NavBar />
             </nav>
-            <Sun />
-            <PlanetBackEnd />
-            <PlanetDataBase />
-            <PlanetDeployment />
-            <PlanetVisualMedia />
-            <PlanetFrontEnd />
+            <div>
+              <Sun />
+              <PlanetBackEnd />
+              <PlanetDataBase />
+              <PlanetDeployment />
+              <PlanetVisualMedia />
+              <PlanetFrontEnd />
+              <AboutMe />
+              <Projects />
+            </div>
           </div>
         </main>
       )

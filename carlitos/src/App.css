@@ -3,6 +3,9 @@
   margin: 0px;
   padding: 0px;
 }
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
 /* Landing Page  1920 x 929 || 1920 x 1080*/
 
         /* Opening Carusel */
@@ -107,7 +110,7 @@
               50% { background-position: 400% 0; }
               100% { background-position: 0 0; }
             }
-            /* UNIVERSE Section */
+      /* UNIVERSE Section */
             @keyframes orbit {
               from {
                 transform: rotate(0deg);
@@ -145,13 +148,17 @@
               background-size: 200% 200%;
             }
             }
+            .starContainer{
+              filter: blur(2px);
+              -webkit-filter: blur(2px);
+            }
             .carousel-item {
               transition: opacity 1s ease-in-out !important;
             }
             .sun_container{
               display: flex;
               justify-content: center;
-              z-index: -4;
+              z-index: 0;
               position: relative;
               bottom: 750px;
               /* background-color: #000; */
@@ -300,7 +307,7 @@
               position: absolute;
               top: 300px;
               right: 395px;
-              animation: orbit-reverse 5s;
+              animation: orbit-reverse 15s;
               animation-iteration-count: infinite;
               width: 60%;
               z-index: 1;
@@ -318,7 +325,7 @@
               outline: solid 2px black;
               font-family:'Courier New', Courier, monospace;
               font-family: 13px;
-              animation: orbit 5s;
+              animation: orbit 15s;
               animation-iteration-count: infinite;
             }
             .planet_media{
@@ -332,4 +339,89 @@
               top: 80px;
               font-size: 45px;
               background-color: #000;
+            }
+
+    /* ABOUT ME */
+            #aboutMe{
+              position: absolute;
+              padding-top: 1%;
+              top: 1200px;
+              width: 80%;
+              left: 10%;
+              background-color: rgba(12, 151, 42, 0.9);
+              box-shadow:10px 10px 8px #888888;
+              border-radius: 5%;
+            }
+            .aboutMe_container{
+              display: inline-block;
+              height: 1000px;
+              z-index: 0;
+              background-color: rgba(255, 255, 255, 0.6);
+              position: relative;
+              padding: 1%;
+              margin: 3%;
+              border-radius: 1%;
+            }
+            .aboutMe_header{
+              display: flex;
+              justify-content: center;
+            }
+
+    /* Projects */
+            #projects {
+              position: absolute;
+              top: 2350px;
+              padding-top: 1%;
+              display: flex;
+              justify-content: center;
+            }
+            .projects_container{
+              position: relative;
+              display: inline;
+              /* width: fit-content */
+            }
+            .projects_header{
+              display: flex;
+              justify-content: center;
+            }
+            .project_section_title{
+              display: flex;
+              justify-content: center;
+            }
+            #project_section{
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #projects_git_logo{
+              border-radius: 100%;
+              width: 150px;
+            }
+            .projects_body{
+              position: relative;
+              left: 10%;
+            }
+            .projectLink-body{
+              display: flex;
+              justify-content: center;
+              width:475px;
+              height: 150px;
+              background-color: rgba(46, 43, 43, 0.919);
+              border-radius: 10%;
+              padding: 1%;
+              margin: 10px;
+              float: left;
+              font-size: 15px;
+              box-shadow: 10px 10px 8px #888888;
+
+            }
+            .project_fields{
+              display: flex;
+              justify-content: center;
+            }
+            .project_title{
+              display: flex;
+              justify-content: center;
+            }
+            .projectLink{
+              color: beige;
+              text-decoration: n;
             }

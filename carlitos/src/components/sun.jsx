@@ -4,6 +4,7 @@ import shuffle from './globalFunctions/randomTechList.js';
 
 export default function Sun() {
   let randomIdx = shuffle(techList) 
+  console.log('here')
   return (
     <div className='sun_container'>
       <div className='sunCarusel carousel-fade'>
@@ -11,7 +12,7 @@ export default function Sun() {
         <Carousel className='carousel-fade'>
         {randomIdx.map((item, idx)=>{
               return(
-                <Carousel.Item interval={50}className="carousel-item imgContainer" key={idx}>
+                <Carousel.Item interval={90}className="carousel-item imgContainer" key={idx}>
                 <img
                   className="d-block w-10 openingIMG"
                   src={item}

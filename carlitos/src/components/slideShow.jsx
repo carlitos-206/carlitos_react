@@ -10,7 +10,7 @@ export default function SlideShow() {
       <Carousel>
       {randomIdx.map((item, idx)=>{
             return(
-              <Carousel.Item interval={50} className="imgContainer" key={idx}>
+              <Carousel.Item interval={90} className="imgContainer" key={idx}>
               <img
                 className="d-block w-10 openingIMG"
                 src={item}

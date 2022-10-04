@@ -15,13 +15,13 @@ export default function Stars(){
       width: `${random(0,15)}px`,
       position: 'relative',
       top: `${random(0, 3080)}px`,
-      zIndex: '-6'
+      zIndex: '-4'
     }
     } />
     array.push(item)
   }
   return(
-    <div className="starCointainer" style={{zIndex:'-6'}}>
+    <div className="starContainer" style={{zIndex:'-6'}}>
       {array.map(item => item)}
     </div>
   )

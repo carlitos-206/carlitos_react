@@ -1,0 +1,101 @@
+[
+  {
+    "title":"Coding Dojo: Solo Project",
+    "link":"https://github.com/carlitos-206/solo_project_1",
+    "last_updated":"June 21, 2021",
+    "Status":"Complete",
+    "language":"Python, JS, CSS, HTML",
+    "frameWork": "Django"
+
+  },
+  {
+    "title":"Coding Dojo: Group Project",
+    "link":"https://github.com/carlitos-206/solo_project_1",
+    "last_updated":"July 9, 2021",
+    "Status":"Complete",
+    "language":"Python, JS, CSS, HTML",
+    "frameWork": "Django"
+
+  },
+  {
+    "title":"Portofolio Attempt: #1",
+    "link":"https://github.com/carlitos-206/portfolio",
+    "last_updated":"July 20, 2021",
+    "Status":"Deprecated",
+    "language":"Python, JS, CSS, HTML",
+    "frameWork": "Django"
+  },
+  {
+    "title":"Python APP",
+    "link":"https://github.com/carlitos-206/first-app",
+    "last_updated":"September 28, 2021",
+    "Status":"Deprecated",
+    "language":"Python",
+    "frameWork": ""
+  },
+  {
+    "title":"Django User Agent intergration Script",
+    "link":"https://github.com/carlitos-206/useragent-Django2.2",
+    "last_updated":"October 24, 2021",
+    "Status":"Deprecated",
+    "language":"Python, JS, CSS, HTML",
+    "frameWork": "Django"
+  },
+  {
+    "title":"JS Browser Game",
+    "link":"https://github.com/carlitos-206/js-browser-game-django",
+    "last_updated":"November 9, 2021",
+    "Status":"Deprecated",
+    "language":"Python, JS, CSS, HTML",
+    "frameWork": "Django"
+  },
+  {
+    "title":"Kitchen Translation App: French, English, Spanish",
+    "link":"https://github.com/carlitos-206/SLU",
+    "last_updated":"Jan 12, 2021",
+    "Status":"Deprecated",
+    "language":"Python, JS, CSS, HTML",
+    "frameWork": "Django"
+  },
+  {
+    "title":"Portofolio Attempt: #2",
+    "link":"https://github.com/carlitos-206/mainPortfolio",
+    "last_updated":"March 19, 2022",
+    "Status":"Deprecated",
+    "language":"Python, JS, CSS, HTML",
+    "frameWork": "Django"
+  },
+  {
+    "title":"Portofolio Attempt: #3",
+    "link":"https://github.com/carlitos-206/JSPortfolio",
+    "last_updated":"April 10, 2022",
+    "Status":"Deprecated",
+    "language":"JS, CSS, HTML",
+    "frameWork": "Express"
+  },
+  {
+    "title":"E-Commerce App with Firebase",
+    "link":"https://github.com/carlitos-206/react-firebase-ecomerce-sdk",
+    "last_updated":"June 22, 2022",
+    "Status":"Deprecated",
+    "language":"JS, CSS, HTML",
+    "frameWork": "React"
+  },
+  {
+    "title":"University of Wa.: Group Final",
+    "link":"https://github.com/carlitos-206/backEndUWFinal2022",
+    "last_updated":"September 10, 2022",
+    "Status":"Complete",
+    "language":"JS, CSS, HTML",
+    "frameWork": "Express, React"
+  },
+  {
+    "title":"Portofolio Attempt: #4",
+    "link":"https://github.com/carlitos-206/carlitos_react",
+    "last_updated":"...",
+    "Status":"Active",
+    "language":"JS, CSS, HTML",
+    "frameWork": "React"
+  }
+  
+]
