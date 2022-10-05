@@ -34,7 +34,7 @@
     "frameWork": ""
   },
   {
-    "title":"Django User Agent intergration Script",
+    "title":"Django User Agent Script",
     "link":"https://github.com/carlitos-206/useragent-Django2.2",
     "last_updated":"October 24, 2021",
     "Status":"Deprecated",
@@ -50,7 +50,7 @@
     "frameWork": "Django"
   },
   {
-    "title":"Kitchen Translation App: French, English, Spanish",
+    "title":"Kitchen Translation App",
     "link":"https://github.com/carlitos-206/SLU",
     "last_updated":"Jan 12, 2021",
     "Status":"Deprecated",
@@ -74,7 +74,7 @@
     "frameWork": "Express"
   },
   {
-    "title":"E-Commerce App with Firebase",
+    "title":"E-Commerce Firebase App",
     "link":"https://github.com/carlitos-206/react-firebase-ecomerce-sdk",
     "last_updated":"June 22, 2022",
     "Status":"Deprecated",

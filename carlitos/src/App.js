@@ -18,9 +18,10 @@ import PlanetVisualMedia from './components/planet_media';
 
 import AboutMe from './components/aboutMe';
 import Projects from './components/projects';
-
+import Resume from './components/resume';
+import Footer from './components/footer';
 // --------
-// Functions
+// Global Functions
 // import sleep  from './components/globalFunctions/sleep.js'
 
 // ---------
@@ -34,7 +35,6 @@ function App() {
         let slideShow = document.getElementsByClassName('slideDiv')[0]
         slideShow.remove()
       },2100)
-      
     }
       return(
         <main>
@@ -56,6 +56,8 @@ function App() {
               <PlanetFrontEnd />
               <AboutMe />
               <Projects />
+              <Resume />
+              <Footer />
             </div>
           </div>
         </main>

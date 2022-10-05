@@ -14,7 +14,7 @@ export default function Stars(){
     let item = <img src={starImg} alt='*' className='stars' id={`star_${i}`} style={{
       width: `${random(0,15)}px`,
       position: 'relative',
-      top: `${random(0, 3080)}px`,
+      top: `${random(0, 3580)}px`,
       zIndex: '-4'
     }
     } />

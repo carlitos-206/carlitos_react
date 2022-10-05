@@ -15,14 +15,14 @@ export default function NavBar(){
                     <a href="#projects" class="pure-menu-link">Projects</a>
                 </li>
                 <li className="pure-menu-item">
-                    <a href="#" class="pure-menu-link">Resume</a>
+                    <a href="#resume" class="pure-menu-link">Resume</a>
                 </li>
                 <li className="pure-menu-item">
                     <a href="#" class="pure-menu-link">Contact</a>
                 </li>
-                <li className="pure-menu-item">
+                {/* <li className="pure-menu-item">
                     <a href="#" class="pure-menu-link">Sign-in/Register</a>
-                </li>
+                </li> */}
             </ul>
         </div>
     )
