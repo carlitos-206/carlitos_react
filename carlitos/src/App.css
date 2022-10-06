@@ -433,11 +433,88 @@
               top: 100px;
             }
             #project_demo_text{
-              background-color: black;
+              background-color: rgba(255, 255, 255, 0.85);
               font-size: xx-large;
               padding: 5px;
-              color: white;
+              color: rgb(0, 0, 0);
               border-radius:5px; 
+            }
+            #project-contact{
+              background-color: rgba(255, 255, 255, 1);
+              color: var(--bs-link-hover-color);
+              text-decoration: underline;
+              border: none;
+            }
+            .demo_contact{
+              position: absolute;
+              position: fixed;
+              display: flex;
+              justify-content: center;
+              top: 180px;
+              left: 27.5%;
+              background-color: rgb(255, 255, 255);
+              width: 45%;
+              z-index: +4;
+              border-radius: 10px;
+              box-shadow: 10px 10px 8px rgba(136, 136, 136, 0.508);
+              border: solid .5px black;
+
+
+            }
+            .contact_video_section{
+              display: flex;
+              justify-content: center;
+              
+            }
+            .contact_section{
+              display: flex;
+              justify-content: center;
+              
+            }
+            .contact_video_section{
+              width: 100%;
+              display: inline;
+              justify-content: center;
+            }
+            #contact_video{
+              width: 100%;
+              display: flex;
+              justify-content: center;
+            }
+            .contact_items{
+              display: flex;
+              justify-content: center;
+              width: 100%;
+            }
+            .contact_items_rendered{
+              display: flex;
+              justify-content: center;
+            }
+            .contact_item_img{
+              width: 70px;
+              margin: 20px;
+            }
+            #contact_from_navBar{
+              position: fixed;
+              left: 33%;
+              background-color: rgb(255, 255, 255);
+              border-radius: 10px;
+              box-shadow: 10px 10px 8px rgba(136, 136, 136, 0.508);
+              border: solid .5px black;
+
+
+            }
+            #contact-exit{
+              position: relative;
+              color: rgb(0, 0, 0);
+              font-size: 25px;
+              margin: 10px;
+              display: flex;
+              justify-content: flex-end;
+              text-decoration: none;
+            }
+            #contact-exit:hover{
+              cursor: pointer;
             }
       /* Resume Google Doc SRC */
       @import url('https://themes.googleusercontent.com/fonts/css?kit=RFda8w1V0eDZheqfcyQ4EGb3DKsRMD34dqg1gT8Z-p6isjtAVhoKeKPV_uAAgBOSk3k702ZOKiLJc3WVjuplzDj3qlxvkMVt2Q_AbZj4pHw');
@@ -1495,6 +1572,7 @@
         top: 3300px;
         left: 28.5%;
         padding: 1.5px;
+        margin-top:10px ;
         display: inline;
         box-shadow: 10px 10px 8px #888888;
 

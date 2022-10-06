@@ -34,7 +34,7 @@
     "frameWork": ""
   },
   {
-    "title":"Django User Agent Script",
+    "title":"Django User Agent intergration script",
     "link":"https://github.com/carlitos-206/useragent-Django2.2",
     "last_updated":"October 24, 2021",
     "Status":"Deprecated",

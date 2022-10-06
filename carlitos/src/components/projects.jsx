@@ -1,7 +1,20 @@
 import React from "react";
 import gitHub from "./img/tech/github.png"
+import Contact from "./contact";
 const projects =  require("./data/projects.json")
 export default function Projects(){
+  const contact = (e) =>{
+    e.preventDefault()
+    let contactForm = document.getElementsByClassName('demo_contact')[0]
+    contactForm.setAttribute('style', 'display:block')
+    const contact = document.getElementById('contact_from_navBar')
+    contact.setAttribute('style', 'display:none')
+  }
+  const close = (e) =>{
+    e.preventDefault()
+    let contactForm = document.getElementsByClassName('demo_contact')[0]
+    contactForm.setAttribute('style', 'display:none')
+}
   return(
     <div id="projects">
       <div className="projects_container">
@@ -28,7 +41,11 @@ export default function Projects(){
             })}
         </div>
         <div id="project_demo">
-          <p id="project_demo_text">Want to live demo a project? <a href="#contact">Contact me</a></p>
+          <p id="project_demo_text">Want to live demo a project? <button id="project-contact" onClick={(e)=>{contact(e)}} >Contact me</button></p>
+        </div>
+        <div className="demo_contact" style={{display: 'none'}}>
+          <a href="#contact" id="contact-exit" onClick={(e)=>{close(e)}}>X</a>
+          <Contact source='demo' />
         </div>
       </div>
     </div>

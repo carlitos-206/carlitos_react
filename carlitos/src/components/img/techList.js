@@ -20,6 +20,7 @@ import illustrator from './tech/illustrator.png';
 import javascript from './tech/JavaScript.png';
 import jest from './tech/jest.png';
 import jquery from './tech/jQuery.png';
+import jsx from './tech/jsx.png'
 import lightRoom from './tech/lightRoom.png';
 import linkedIn from './tech/linkedin.png'
 import linux from './tech/linux.png';
@@ -64,6 +65,7 @@ export const techList = [
   javascript,
   jest,
   jquery,
+  jsx,
   lightRoom,
   linkedIn,
   linux,

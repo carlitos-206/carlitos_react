@@ -4,7 +4,6 @@ import shuffle from './globalFunctions/randomTechList.js';
 
 export default function Sun() {
   let randomIdx = shuffle(techList) 
-  console.log('here')
   return (
     <div className='sun_container'>
       <div className='sunCarusel carousel-fade'>

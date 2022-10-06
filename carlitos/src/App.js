@@ -5,6 +5,7 @@ import 'animate.css'
 import {  Routes, Route } from 'react-router-dom'
 
 // --------
+
 // Components
 import SlideShow from './components/slideShow';
 import NavBar from './components/navbar';
@@ -20,13 +21,18 @@ import AboutMe from './components/aboutMe';
 import Projects from './components/projects';
 import Resume from './components/resume';
 import Footer from './components/footer';
+
 // --------
+
 // Global Functions
 // import sleep  from './components/globalFunctions/sleep.js'
 
 // ---------
+
 // CSS
 import './App.css';
+
+// ---------
 
 function App() {
   const LandingPage = () =>{
@@ -37,7 +43,7 @@ function App() {
       },2100)
     }
       return(
-        <main>
+        <main id='top'>
           <div className='slideDiv animate__animated animate__fadeOut animate__delay-1s'>
             <SlideShow />
           </div>
@@ -47,7 +53,7 @@ function App() {
             <nav>
               <NavBar />
             </nav>
-            <div>
+            <div className='component_collection'>
               <Sun />
               <PlanetBackEnd />
               <PlanetDataBase />
@@ -59,6 +65,12 @@ function App() {
               <Resume />
               <Footer />
             </div>
+            {/* <div className='nav_contact'>
+
+            </div>
+            <div className='project_contact'>
+
+            </div> */}
           </div>
         </main>
       )

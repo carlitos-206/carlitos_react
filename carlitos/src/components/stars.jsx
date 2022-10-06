@@ -1,6 +1,3 @@
-// https://stackoverflow.com/questions/1510512/how-to-draw-points-in-x-y-positions-using-javascript
-// https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
-
 import React from "react";
 import starImg from './img/random/blackStar.png'
 
