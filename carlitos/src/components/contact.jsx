@@ -16,7 +16,7 @@ export default function Contact({source}){
                   {
                     contactListFixed.map((item, idx)=>{
                       return(
-                        <div className="contact_items_rendered">
+                        <div className="contact_items_rendered" key={idx}>
                           <a href={item.url} id={`contact_item_${idx}`} target='_blank' rel="noopener noreferrer" key={idx}>
                             <img src={item.icon} alt={item.title} className="contact_item_img" />
                           </a>
@@ -40,7 +40,7 @@ export default function Contact({source}){
                   {
                     contactListFull.map((item, idx)=>{
                       return(
-                        <div className="contact_items_rendered">
+                        <div className="contact_items_rendered" key={idx}>
                           <a href={item.url} id={`contact_item_${idx}`} target='_blank' rel="noopener noreferrer" key={idx}>
                             <img src={item.icon} alt={item.title} className="contact_item_img" />
                           </a>

@@ -43,6 +43,7 @@ function App() {
       },2100)
     }
       return(
+        
         <main id='top'>
           <div className='slideDiv animate__animated animate__fadeOut animate__delay-1s'>
             <SlideShow />

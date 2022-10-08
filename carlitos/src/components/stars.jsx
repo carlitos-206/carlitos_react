@@ -8,10 +8,10 @@ export default function Stars(){
   }
 
   for(let i = 0; i < 10000; i++){
-    let item = <img src={starImg} alt='*' className='stars' id={`star_${i}`} style={{
+    let item = <img src={starImg} key={i} alt='*' className='stars' id={`star_${i}`} style={{
       width: `${random(0,15)}px`,
       position: 'relative',
-      top: `${random(0, 3580)}px`,
+      top: `${random(0, 3550)}px`,
       zIndex: '-4'
     }
     } />

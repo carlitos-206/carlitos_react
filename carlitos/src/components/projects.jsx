@@ -44,7 +44,7 @@ export default function Projects(){
           <p id="project_demo_text">Want to live demo a project? <button id="project-contact" onClick={(e)=>{contact(e)}} >Contact me</button></p>
         </div>
         <div className="demo_contact" style={{display: 'none'}}>
-          <a href="#contact" id="contact-exit" onClick={(e)=>{close(e)}}>X</a>
+          <a href="#contact" id="contact-exit" onClick={(e)=>{close(e)}}>❌</a>
           <Contact source='demo' />
         </div>
       </div>

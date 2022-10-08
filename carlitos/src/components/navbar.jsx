@@ -15,16 +15,6 @@ export default function NavBar(){
         const contact = document.getElementById('contact_from_navBar')
         contact.setAttribute('style', 'display:none')
     }
-    // document.onclick = function (e) {
-    //     e.preventDefault()
-    //     const contact = document.getElementById('contact_from_navBar')
-    //     if(contact.style.display === 'block'){
-    //         if (e.target.id !== 'contact_from_navBar' && e.target.id !== 'contact_from_navBar') {
-    //             if (e.target.offsetParent && e.target.offsetParent.id !== 'contact_from_navBar')
-    //                 close(e)
-    //         }
-    //     }
-    // }
     return(
         <div className="pure-menu pure-menu-horizontal navBar glow-on-hover">
             <ul className="pure-menu-list">
@@ -49,7 +39,7 @@ export default function NavBar(){
                 </li> */}
             </ul>
             <div id="contact_from_navBar" style={{display:'none'}}>
-                <a href='#contact'id="contact-exit" onClick={(e)=>{close(e)}}>X</a>
+                <a href='#contact'id="contact-exit" onClick={(e)=>{close(e)}}>❌</a>
                 <Contact source={'NavBar'} />
             </div>
         </div>

@@ -11,7 +11,6 @@ export default function Footer(){
           <a href="https://github.com/carlitos-206" target='_blank' rel="noopener noreferrer" className="footer_tags"> Git Hub</a> |
           <a href="https://www.instagram.com/carlitos.206/" target='_blank' rel="noopener noreferrer" className="footer_tags"> Instagram</a> | 
           <a href="https://www.youtube.com/channel/UCfJtIgTcGEX_D0TLjFi-COQ" target='_blank' rel="noopener noreferrer" className="footer_tags"> Youtube</a> |
-          <a href="https://stackoverflow.com/users/17113680/carlitos" target='_blank' rel="noopener noreferrer" className="footer_tags"> Stack Overflow</a> |
           <a href="https://github.com/carlitos-206/carlitos_react" target='_blank' rel="noopener noreferrer" className="footer_tags"> View the source code to this site</a>
         </p>
       </div>
