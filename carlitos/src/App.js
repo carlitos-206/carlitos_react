@@ -35,6 +35,7 @@ import './App.css';
 // ---------
 
 function App() {
+  let screenInfo = {width: window.innerWidth, height: window.innerHeight}
   const LandingPage = () =>{
     const killSlides = () =>{
       setTimeout(()=>{
@@ -43,16 +44,15 @@ function App() {
       },2100)
     }
       return(
-        
         <main id='top'>
           <div className='slideDiv animate__animated animate__fadeOut animate__delay-1s'>
             <SlideShow />
           </div>
           <div className='animate__animated animate__fadeIn animate__delay-2s universeDIV'>
-            <Stars />
+            <Stars screenInfo={screenInfo} />
             {killSlides()}
             <nav>
-              <NavBar />
+              <NavBar/>
             </nav>
             <div className='component_collection'>
               <Sun />
@@ -66,16 +66,11 @@ function App() {
               <Resume />
               <Footer />
             </div>
-            {/* <div className='nav_contact'>
-
-            </div>
-            <div className='project_contact'>
-
-            </div> */}
           </div>
         </main>
       )
   }
+
   return (
     <div className="App">
         <Routes>

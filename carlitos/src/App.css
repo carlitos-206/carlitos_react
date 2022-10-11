@@ -36,12 +36,14 @@
         /* NavBar */
               .navBar{
                 position: fixed;
-                left: 80%;
+                left: 59%;
                 top: 30px;
                 width: max-content;
                 /* background-color: rgb(255, 255, 255); */
                 z-index: 4;
                 font-size: 20px;
+                transform: translate3d(0,0,0);
+
               }
               .pure-menu-item, .pure-menu-heading{
                 z-index: 5;
@@ -510,7 +512,7 @@
               position: relative;
               color: rgb(0, 0, 0);
               font-size: 25px;
-              margin: 10px;
+              left: 99%;
               display: flex;
               justify-content: flex-end;
               text-decoration: none;
@@ -1572,12 +1574,10 @@
         background-color: #000;
         position: absolute;
         top: 3300px;
-        left: 24%;
-        padding: 1.5px;
-        margin-top:10px ;
+        margin:10px ;
         display: inline;
         box-shadow: 10px 10px 8px #888888;
-        width: max-content;
+        width: fit-content;
 
       }
       #resumeDownloadLink{
@@ -1632,7 +1632,7 @@
 
 
 
-
+/* Mid Screen */
 @media screen and (min-width: 1536px) {
   
   /* Opening Carusel */
@@ -2136,10 +2136,11 @@
               position: relative;
               color: rgb(0, 0, 0);
               font-size: 25px;
-              margin: 10px;
               display: flex;
+              left: 94%;
               justify-content: flex-end;
               text-decoration: none;
+              width: fit-content;
             }
             #contact-exit:hover{
               cursor: pointer;
@@ -3262,12 +3263,12 @@
 
 
 
-  
- 
 
 
 
 
+
+/* Large Desktop */
 @media screen and (min-width: 1920px) {
   
   /* Opening Carusel */
@@ -3766,8 +3767,6 @@
               border-radius: 10px;
               box-shadow: 10px 10px 8px rgba(136, 136, 136, 0.508);
               border: solid .5px black;
-
-
             }
             #contact-exit{
               position: relative;
@@ -3775,6 +3774,7 @@
               font-size: 25px;
               margin: 10px;
               display: flex;
+              left: 94%;
               justify-content: flex-end;
               text-decoration: none;
             }
