@@ -43,6 +43,7 @@ function App() {
         slideShow.remove()
       },2100)
     }
+    if(screenInfo.width < 1204){
       return(
         <main id='top'>
           <div className='slideDiv animate__animated animate__fadeOut animate__delay-1s'>
@@ -52,7 +53,29 @@ function App() {
             <Stars screenInfo={screenInfo} />
             {killSlides()}
             <nav>
-              <NavBar/>
+              <NavBar screenInfo={screenInfo}/>
+            </nav>
+            <div className='component_collection'>
+              <Sun />
+              <AboutMe />
+              <Projects />
+              <Resume />
+              <Footer />
+            </div>
+          </div>
+        </main>
+      )
+    }else{
+      return(
+        <main id='top'>
+          <div className='slideDiv animate__animated animate__fadeOut animate__delay-1s'>
+            <SlideShow />
+          </div>
+          <div className='animate__animated animate__fadeIn animate__delay-2s universeDIV'>
+            <Stars screenInfo={screenInfo} />
+            {killSlides()}
+            <nav>
+              <NavBar screenInfo={screenInfo}/>
             </nav>
             <div className='component_collection'>
               <Sun />
@@ -69,6 +92,7 @@ function App() {
           </div>
         </main>
       )
+    }
   }
 
   return (

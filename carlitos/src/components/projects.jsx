@@ -23,9 +23,6 @@ export default function Projects(){
         <div className="projects_header">
             <a href="https://github.com/carlitos-206" target="_blank" rel="noopener noreferrer" ><img src={gitHub} alt="Git Hub" id="projects_git_logo" /></a>
         </div>
-        <div className="project_section_title">
-            {/* <h1 id="project_section">Projects</h1> */}
-        </div>
         <div className="projects_body">
             {projects.map((project, idx)=>{
               return(

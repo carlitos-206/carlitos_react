@@ -19,6 +19,7 @@ export default function Contact({source}){
                         <div className="contact_items_rendered" key={idx}>
                           <a href={item.url} id={`contact_item_${idx}`} target='_blank' rel="noopener noreferrer" key={idx}>
                             <img src={item.icon} alt={item.title} className="contact_item_img" />
+                            <p>{item.title}</p>
                           </a>
                         </div>
                       )
