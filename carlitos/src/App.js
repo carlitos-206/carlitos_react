@@ -59,8 +59,8 @@ function App() {
               <Sun />
               <AboutMe />
               <Projects />
-              <Resume />
-              <Footer />
+              <Resume screenInfo={screenInfo} />
+              <Footer/>
             </div>
           </div>
         </main>
@@ -86,7 +86,7 @@ function App() {
               <PlanetFrontEnd />
               <AboutMe />
               <Projects />
-              <Resume />
+              <Resume screenInfo={screenInfo} />
               <Footer />
             </div>
           </div>
