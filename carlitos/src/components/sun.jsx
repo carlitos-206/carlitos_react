@@ -2,6 +2,9 @@ import Carousel from 'react-bootstrap/Carousel';
 import { techList } from './img/techList.js';
 import shuffle from './globalFunctions/randomTechList.js';
 
+// This function holds the center slideshow of imgs in the site
+// It shuffles the array on reload
+// it then loops infinately by using bootstrap carrusul
 export default function Sun() {
   let randomIdx = shuffle(techList) 
   return (

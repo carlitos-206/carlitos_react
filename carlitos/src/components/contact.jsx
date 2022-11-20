@@ -1,16 +1,20 @@
 import React from "react";
 import { contactListFixed, contactListFull } from "./img/contactList";
 
+
+// This Function holds the two contact section options
+// option 1: Projects contact button ie === 'demo';
+            // This conatains the fixed contact list where some items are removed
+// option 2: Menu nav bar contact section
+            // This contains the full contact list 
 export default function Contact({source}){
-  let vidSrc;
-  
+  // This condition hits if the source of the call is from the project section
   if(source === 'demo'){
-    vidSrc = source
     return (
       <div className="contact_section" id="contact">
         <div className="contact_video_section">
             <div id="contact_video">
-                <h1>video src: {vidSrc}</h1>
+                <h1>video src: {source}</h1>
             </div>
             <div className="contact_items">
                   {
@@ -29,13 +33,14 @@ export default function Contact({source}){
         </div>
       </div>
     )
-  }else{
-    vidSrc = source
+  }
+  // for every other condition the full contact list is prefered
+  else{
     return (
       <div className="contact_section" id="contact" >
         <div className="contact_video_section">
             <div id="contact_video">
-                <h1>video src: {vidSrc}</h1>
+                <h1>video src: {source}</h1>
             </div>
             <div className="contact_items">
                   {

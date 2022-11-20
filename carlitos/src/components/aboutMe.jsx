@@ -1,5 +1,6 @@
 import React from "react";
 
+// This function holds the About me portion of the page
 export default function AboutMe(){
   return(
     <div id="aboutMe">

@@ -1,6 +1,14 @@
 import React from "react";
 import starImg from './img/random/blackStar.png'
 
+// this function hold the stars background of the site. 
+// it has been modified for various screen sizes
+// concept is simple:
+//    Check for screen width
+//    randomly place a star img in the screen with given params
+//    star width is randomly given also
+//    on refresh a new deployment is done
+// meaning you might never see the same pattern again making each pattern brand new everytime
 export default function Stars({screenInfo}){
   console.log(`
     W: ${screenInfo.width}
@@ -8,9 +16,11 @@ export default function Stars({screenInfo}){
 
   `)
   let array = []
+  // function to give random input
   function random(min, max) {
     return min + Math.random() * (max + 1 - min);
   }
+  // all mobile devices
   if(screenInfo.width>=360 && screenInfo.width<540){
     let heightAdjustment = (screenInfo.width - 360)*3
     console.log(heightAdjustment)
@@ -25,7 +35,7 @@ export default function Stars({screenInfo}){
       array.push(item)
     }
   } 
-     // EDGECASE SURFACE DUO
+     // EDGECASE --- SURFACE DUO TABLET
     else if(screenInfo.width === 540){
       let heightAdjustment = (screenInfo.width - 540)
       console.log(heightAdjustment)

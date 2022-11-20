@@ -1,5 +1,5 @@
 import React from "react";
-
+// This function holds the footer section of the page
 export default function Footer(){
     return(
       <div className="footer">

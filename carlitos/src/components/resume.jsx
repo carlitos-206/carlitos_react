@@ -1,6 +1,7 @@
 import React from "react";
 const resume = require('./files/Resume.pdf')
 
+// The html comes from google docs but have been modified
 export default function Resume({screenInfo}){
   console.log(screenInfo)
   if(screenInfo.width<540){
@@ -266,7 +267,7 @@ export default function Resume({screenInfo}){
                   <li className="c4 li-bullet-0"><span className="c8">Python3</span></li>
                 </ul>
                 <ul className="c7 lst-kix_9ys133z7aaj4-2 start">
-                  <li className="c0 li-bullet-0"><span className="c8">Django 2.2</span></li>
+                  <li className="c0 li-bullet-0"><span className="c8">Django 2.2+</span></li>
                 </ul>
                 <ul className="c7 lst-kix_9ys133z7aaj4-1">
                   <li className="c4 li-bullet-0"><span className="c8">JavaScript ES6</span></li>

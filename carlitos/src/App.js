@@ -35,7 +35,10 @@ import './App.css';
 // ---------
 
 function App() {
+  // this gets the screen dimension
   let screenInfo = {width: window.innerWidth, height: window.innerHeight}
+  
+  // this is the arrival page 
   const LandingPage = () =>{
     const killSlides = () =>{
       setTimeout(()=>{
@@ -43,6 +46,7 @@ function App() {
         slideShow.remove()
       },2100)
     }
+    // on mobile devices dont show the planets since its width constricted
     if(screenInfo.width < 1204){
       return(
         <main id='top'>
@@ -94,7 +98,7 @@ function App() {
       )
     }
   }
-
+  // this is the routing of the app
   return (
     <div className="App">
         <Routes>
