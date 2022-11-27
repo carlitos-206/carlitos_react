@@ -14,7 +14,7 @@ export const contactListFull = [
   {
     title:'Git Hub',
     icon: github,
-    url: "https://www.linkedin.com/in/carlitos206/"
+    url: "https://www.github.com/carlitos-206"
 
   },
   {
@@ -31,7 +31,7 @@ export const contactListFull = [
   {
     title:'Stack Overflow',
     icon: stackOverFlow,
-    url: "https://stackoverflow.com/users/17113680/carlitos"
+    url: "https://www.stackoverflow.com/users/17113680/carlitos"
   },
   {
     title:'Youtube',

@@ -20,21 +20,51 @@ export default function Stars({screenInfo}){
   function random(min, max) {
     return min + Math.random() * (max + 1 - min);
   }
-  // all mobile devices
-  if(screenInfo.width>=360 && screenInfo.width<540){
+  // Small mobile devices
+  if(screenInfo.width>=360 && screenInfo.width<390){
     let heightAdjustment = (screenInfo.width - 360)*3
     console.log(heightAdjustment)
     for(let i = 0; i < 10000; i++){
       let item = <img src={starImg} key={i} alt='*' className='stars' id={`star_${i}`} style={{
         width: `${random(0,15)}px`,
         position: 'relative',
-        top: `${random(0, 300)}px`,
+        top: `${random(0, 100)}px`,
         zIndex: '-4'
       }
       } />
       array.push(item)
     }
-  } 
+  }
+  // Medium Mobile Screens
+  else if(screenInfo.width>=390 && screenInfo.width<412){
+    let heightAdjustment = (screenInfo.width - 360)*3
+    console.log(heightAdjustment)
+    for(let i = 0; i < 10000; i++){
+      let item = <img src={starImg} key={i} alt='*' className='stars' id={`star_${i}`} style={{
+        width: `${random(0,15)}px`,
+        position: 'relative',
+        top: `${random(0, 310)}px`,
+        zIndex: '-4'
+      }
+      } />
+      array.push(item)
+    }
+  }
+  // Large Mobile Screens 
+  else if(screenInfo.width>=412 && screenInfo.width<540){
+    let heightAdjustment = (screenInfo.width - 360)*3
+    console.log(heightAdjustment)
+    for(let i = 0; i < 10000; i++){
+      let item = <img src={starImg} key={i} alt='*' className='stars' id={`star_${i}`} style={{
+        width: `${random(0,15)}px`,
+        position: 'relative',
+        top: `${random(0, 520)}px`,
+        zIndex: '-4'
+      }
+      } />
+      array.push(item)
+    }
+  }
      // EDGECASE --- SURFACE DUO TABLET
     else if(screenInfo.width === 540){
       let heightAdjustment = (screenInfo.width - 540)
@@ -58,7 +88,7 @@ export default function Stars({screenInfo}){
       let item = <img src={starImg} key={i} alt='*' className='stars' id={`star_${i}`} style={{
         width: `${random(0,15)}px`,
         position: 'relative',
-        top: `${random(0, 2250+heightAdjustment)}px`,
+        top: `${random(0, 2050+heightAdjustment)}px`,
         zIndex: '-4'
       }
       } />
@@ -73,7 +103,7 @@ export default function Stars({screenInfo}){
       let item = <img src={starImg} key={i} alt='*' className='stars' id={`star_${i}`} style={{
         width: `${random(0,15)}px`,
         position: 'relative',
-        top: `${random(0, 2500+heightAdjustment)}px`,
+        top: `${random(0, 2250+heightAdjustment)}px`,
         zIndex: '-4'
       }
       } />
@@ -114,19 +144,6 @@ export default function Stars({screenInfo}){
       array.push(item)
     }
   }
-
-  // else if(screenInfo.width>=768 && screenInfo.width<=1024){
-  //   for(let i = 0; i < 10000; i++){
-  //     let item = <img src={starImg} key={i} alt='*' className='stars' id={`star_${i}`} style={{
-  //       width: `${random(0,15)}px`,
-  //       position: 'relative',
-  //       top: `${random(0, 3000)}px`,
-  //       zIndex: '-4'
-  //     }
-  //     } />
-  //     array.push(item)
-  //   }
-  // }
   return(
     <div className="starContainer" style={{zIndex:'-6'}}>
       {array.map(item => item)}

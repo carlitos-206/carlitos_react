@@ -34,7 +34,7 @@
     "frameWork": ""
   },
   {
-    "title":"Django User Agent intergration script",
+    "title":"Django User Agent Intergration Script",
     "link":"https://github.com/carlitos-206/useragent-Django2.2",
     "last_updated":"October 24, 2021",
     "Status":"Deprecated",
@@ -96,6 +96,14 @@
     "Status":"Active",
     "language":"JS, CSS, HTML",
     "frameWork": "React, Node JS"
+  },
+  {
+    "title":"OpenAI Collection",
+    "link":"https://github.com/carlitos-206/OpenAiCollection",
+    "last_updated":"...",
+    "Status":"Active",
+    "language":"JS",
+    "frameWork": "Node JS"
   }
   
 ]
