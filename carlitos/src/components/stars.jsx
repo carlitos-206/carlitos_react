@@ -16,7 +16,7 @@ export default function Stars({screenInfo}){
 
   `)
   let array = []
-  // function to give random input
+  // function to give random output
   function random(min, max) {
     return min + Math.random() * (max + 1 - min);
   }

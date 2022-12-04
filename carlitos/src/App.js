@@ -6,6 +6,15 @@ import {  Routes, Route } from 'react-router-dom'
 
 // --------
 
+// Database
+
+import { CollectArrival } from './components/data/firebaseDB/visitorCollection';
+
+// ----------
+
+
+
+
 // Components
 import SlideShow from './components/slideShow';
 import NavBar from './components/navbar';
@@ -22,6 +31,7 @@ import Projects from './components/projects';
 import Resume from './components/resume';
 import Footer from './components/footer';
 
+import CollectionAgreement from './components/collectionWindow';
 // --------
 
 // Global Functions
@@ -35,6 +45,8 @@ import './App.css';
 // ---------
 
 function App() {
+  // CollectArrival()
+  // history.go(-1)
   // this gets the screen dimension
   let screenInfo = {width: window.innerWidth, height: window.innerHeight}
   
@@ -64,6 +76,7 @@ function App() {
               <AboutMe />
               <Projects />
               <Resume screenInfo={screenInfo} />
+              <CollectionAgreement />
               <Footer/>
             </div>
           </div>
@@ -91,6 +104,7 @@ function App() {
               <AboutMe />
               <Projects />
               <Resume screenInfo={screenInfo} />
+              <CollectionAgreement />
               <Footer />
             </div>
           </div>

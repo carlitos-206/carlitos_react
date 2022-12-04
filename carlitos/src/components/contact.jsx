@@ -1,6 +1,6 @@
 import React from "react";
+import ContactForm from "./contactForm";
 import { contactListFixed, contactListFull } from "./img/contactList";
-
 // This Function holds the two contact section options
 // option 1: Projects contact button ie === 'demo';
             // This conatains the fixed contact list where some items are removed
@@ -20,6 +20,9 @@ export default function Contact({source}){
             <p id="contact_me_body"> Using Ngrok, I can live Demo any project, watch below how.</p>          
             <div id="contact_video">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/3oPyNdDMbCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div className="contactForm_demo">
+                <ContactForm formSource={'demo'} deviceType={'monitor'} />
               </div>
               <div className="contact_items">
                     {
@@ -44,6 +47,9 @@ export default function Contact({source}){
         <div className="contact_section" id="contact" >
           <div className="contact_video_section">
             <h1 id="contact_me_navBar">Contact Me</h1>
+            <div className="contactForm_navBar">
+                <ContactForm formSource={'navBar'} deviceType={'monitor'} />
+              </div>
               <div className="contact_items">
                     {
                       contactListFull.map((item, idx)=>{
@@ -73,6 +79,9 @@ export default function Contact({source}){
             <p id="contactCardHeader-body"> Using Ngrok, I can live Demo any project, watch below how.</p>
             <iframe id="ngrok-video" src="https://www.youtube.com/embed/3oPyNdDMbCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
+            <div className="contactForm_navBar">
+                <ContactForm formSource={'mobile_demo'} deviceType={'mobile'} />
+            </div>
             <div id='link-img-listGroups'>
               {contactListFixed.map((item, idx)=>{
                 return(
@@ -92,6 +101,9 @@ export default function Contact({source}){
         <div className="boostStrap-contactCard-header-menu">
           <h1 id="contactCardHeader-title-menu">CONTACT ME</h1>
         </div>
+          <div className="contactForm_mobile_navBar">
+                <ContactForm formSource={'mobile_navBar'} deviceType={'mobile'} />
+          </div>
           <div id='link-img-listGroups'>
             {contactListFull.map((item, idx)=>{
               return(

@@ -15055,7 +15055,7 @@
               padding: 1%;
               margin: 3%;
               border-radius: 1%;
-              left: 20%;
+              left: 25%;
             }
             .aboutMe_header{
               display: flex;
@@ -15191,6 +15191,13 @@
               left: 35%;
               font-size: 32pt;
             }
+            .contact_formDiv{
+              padding: 5%;
+            }
+            .form_message_navBar{
+              /* display: inline-block; */
+              /* margin: 10%; */
+            }
             .contact_video_section{
               display: flex;
               justify-content: center;
@@ -15221,8 +15228,11 @@
               justify-content: center;
             }
             .contact_item_img{
+              position: relative;
               width: 70px;
-              margin: 20px;
+              margin: 0px;
+              left:-20%;
+              padding: 10px;
             }
             #contact_from_navBar{
               position: fixed;
@@ -15231,13 +15241,14 @@
               border-radius: 10px;
               box-shadow: 10px 10px 8px rgba(136, 136, 136, 0.508);
               border: solid .5px black;
+              width: 500px;
             }
             #contact-exit{
               position: relative;
               color: rgb(0, 0, 0);
               font-size: 25px;
               display: flex;
-              left: 94%;
+              left: 92%;
               justify-content: flex-end;
               text-decoration: none;
             }
@@ -16312,7 +16323,18 @@
         width: 100%;
         top: 467px;
       }
-
+  /* Agreement Window */
+    .collectionWindowForm{
+      position:fixed;
+      top:790px;
+      background-color: wheat;
+      width:25%;
+      left: 3%;
+      padding: .5%;
+      z-index: 7;
+      border-radius: 10px;
+    }
+  
   /* Footer */
       .footer{
         display: flex;
