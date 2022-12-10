@@ -2,7 +2,7 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
-import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics } from "firebase/analytics";
 
 // this is the auth object
 const firebaseConfig = {
@@ -19,7 +19,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 // Get Firebase Ananlytics
-export const analytics = getAnalytics(app);
+// export const analytics = getAnalytics(app);
 
 // CRUD access to the Firebase Firestore
 export const db = getFirestore(app);

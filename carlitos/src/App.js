@@ -3,12 +3,10 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css'
 import {  Routes, Route } from 'react-router-dom'
-
+import { v4 as uuidv4 } from 'uuid';
 // --------
 
 // Database
-
-import { CollectArrival } from './components/data/firebaseDB/visitorCollection';
 
 // ----------
 
@@ -45,13 +43,12 @@ import './App.css';
 // ---------
 
 function App() {
-  // CollectArrival()
-  // history.go(-1)
+  sessionStorage.setItem('visitor_id', uuidv4())
   // this gets the screen dimension
   let screenInfo = {width: window.innerWidth, height: window.innerHeight}
-  
   // this is the arrival page 
   const LandingPage = () =>{
+    // visitorCount()
     const killSlides = () =>{
       setTimeout(()=>{
         let slideShow = document.getElementsByClassName('slideDiv')[0]
