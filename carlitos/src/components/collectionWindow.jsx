@@ -4,7 +4,6 @@ import Form from 'react-bootstrap/Form';
 import { CollectArrival } from "./data/firebaseDB/visitorCollection";
 
 import {visitorCount, visitorCollection, updateVisitor } from "./data/firebaseDB/sendOffs";
-
 export default function CollectionAgreement(){
   visitorCount()
   CollectArrival()

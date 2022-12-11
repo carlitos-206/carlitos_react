@@ -15,16 +15,18 @@ export default function ContactForm({formSource, deviceType}) {
   const[phoneNumber, setPhoneNumber] = useState(null)
   const[message, setMessage] = useState(null)
 
-  const sendToFirebase=(e)=>{
+  const sendContactInfoToFirebase=(e)=>{
     e.preventDefault()
     
     // const data_id = sessionStorage.getItem('data_id')
     let data_id = sessionStorage.getItem('data_id')
+    let visit_id = sessionStorage.getItem('visitor_id')
     const entriesRef = collection(db, "connection_request");
     let unique_id = uuidv4()
     if(data_id !==null && data_id !=="" && data_id !==undefined ){
       addDoc(entriesRef,{
         id: unique_id,
+        visit_id: visit_id,
         data_id: data_id,
         firstName: firstName,
         lastName: lastName,
@@ -36,6 +38,7 @@ export default function ContactForm({formSource, deviceType}) {
     }else{
       addDoc(entriesRef,{
         id: unique_id,
+        visit_id: visit_id,
         firstName: firstName,
         lastName: lastName,
         email: email,
@@ -46,11 +49,47 @@ export default function ContactForm({formSource, deviceType}) {
     } 
     document.getElementById("contactForm").reset();
   }
+
+  const sendDemoInfoToFirebase=(e)=>{
+    e.preventDefault()
+    
+    // const data_id = sessionStorage.getItem('data_id')
+    let data_id = sessionStorage.getItem('data_id')
+    let visit_id = sessionStorage.getItem('visitor_id')
+    const entriesRef = collection(db, "connection_request");
+    let unique_id = uuidv4()
+    if(data_id !==null && data_id !=="" && data_id !==undefined ){
+      addDoc(entriesRef,{
+        id: unique_id,
+        visit_id: visit_id,
+        data_id: data_id,
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        phoneNumber: phoneNumber,
+        message: message,
+        date: new Date().toISOString()
+      })
+    }else{
+      addDoc(entriesRef,{
+        id: unique_id,
+        visit_id: visit_id,
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        phoneNumber: phoneNumber,
+        message: message,
+        date: new Date().toISOString()
+      })
+    } 
+    document.getElementById("contactForm").reset();
+  }
+
   if(deviceType === 'monitor'){
     if(formSource === 'navBar'){
       return(
         <div className='contact_formDiv'>
-          <Form id="contactForm" onSubmit={(e)=>{sendToFirebase(e)}}>
+          <Form id="contactForm" onSubmit={(e)=>{sendContactInfoToFirebase(e)}}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>First Name</Form.Label>
               <Form.Control type="text" placeholder="Enter First Name" onChange={ (e)=>{ setFirstName(e.target.value); } } required/>
@@ -76,7 +115,7 @@ export default function ContactForm({formSource, deviceType}) {
     if(formSource === 'demo'){
       return(
         <div className='contact_formDiv'>
-          <Form id="contactForm" onSubmit={(e)=>{sendToFirebase(e)}}>
+          <Form id="contactForm" onSubmit={(e)=>{sendDemoInfoToFirebase(e)}}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>First Name</Form.Label>
               <Form.Control type="text" placeholder="Enter First Name" onChange={ (e)=>{ setFirstName(e.target.value); } } required/>

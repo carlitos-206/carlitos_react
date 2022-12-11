@@ -28,7 +28,7 @@ import AboutMe from './components/aboutMe';
 import Projects from './components/projects';
 import Resume from './components/resume';
 import Footer from './components/footer';
-
+import AForm from './components/ai_img_generator';
 import CollectionAgreement from './components/collectionWindow';
 // --------
 
@@ -100,6 +100,7 @@ function App() {
               <PlanetFrontEnd />
               <AboutMe />
               <Projects />
+              <AForm />
               <Resume screenInfo={screenInfo} />
               <CollectionAgreement />
               <Footer />

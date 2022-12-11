@@ -74,23 +74,35 @@ export async function visitorCollection(tree) {
 export async function updateVisitor(){
   // Link the visitID to the new visit visitor Collection
   const visitID = sessionStorage.getItem('visitor_id')
-  // This is the key to the
+  // This is the id and the title of the document 
+  // This then acts like a a SQL fk
   const data_id = sessionStorage.getItem('data_id')
+  // Firebase Get Call
   const docRef = doc(db, 'visitorCollection', data_id)
   const snapShot = await getDoc(docRef)
+  // We need to count the total visits to dinamaclly write the next data entry
   let num = 0;
+  // we hold the firebase response in a object to make it easier to iterate
   let object = snapShot.data()
+  // Visit count
   let visitCount = snapShot.data().visitCount
+  // This iterates throught the object to find property names that start with 'visit_'
   for ( const property in object){
     if(property.startsWith('visit_')){
       num +=1
     }
   }
-  // Turn the data into an object 
+  // The data value resets per visit 
+  // Theregor needs to get pull and parse incase the new visit information differs from original 
   const data = JSON.parse(sessionStorage.getItem('data'))
+  // The ID and date_visited field need to get manually added each time to avoid errors in db connections and dates
   data['id'] = visitID
   data['date_visited'] = new Date().toString()
+  
+  // This is the updated object that will be sent to firebase
   let document = {
+    // firebase only updates the fields it get sent therfore if the field isnt there 
+    // Then firebase retains original information
     visitCount: visitCount+1,
   }
   document[`visit_${num}`] = data
